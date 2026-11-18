@@ -9,10 +9,25 @@ A small Windows desktop application that moves files from a source folder into f
 
 No third-party Python packages are required.
 
+## Get the application from GitHub
+
+Open the project in a browser at:
+
+https://github.com/Jonathan-BAM/File-Organiser
+
+To download it using Git, open Command Prompt or PowerShell and run:
+
+```powershell
+git clone https://github.com/Jonathan-BAM/File-Organiser.git
+cd "File-Organiser"
+```
+
+You can also download a ZIP from the GitHub repository: click **Code**, then **Download ZIP**, extract it, and open Command Prompt or PowerShell in the extracted folder.
+
 ## Run on Windows
 
 1. Open Command Prompt or PowerShell.
-2. Change to the project folder:
+2. Change to the project folder. If you cloned the repository from this folder, it is named `File-Organiser`:
 
    ```powershell
    cd "C:\path\to\File Organiser"
