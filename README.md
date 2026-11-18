@@ -1,6 +1,7 @@
 # File Organiser
 
 A small Windows desktop application that moves files from a source folder into folders based on file type.
+An experimnent of how we can use Pyhton for automation solutions without needing agentic AI.
 
 ## Requirements
 
