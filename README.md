@@ -1,6 +1,7 @@
 # File Organiser
 
 A small Windows desktop application that moves files from a source folder into folders based on file type.
+An experimnent of how we can use Pyhton for automation solutions without needing agentic AI.
 
 ## Requirements
 
@@ -49,7 +50,7 @@ You can also download a ZIP from the GitHub repository: click **Code**, then **D
 
 1. Select the folder to organise. The **Downloads** folder is used as the default.
 2. Optionally choose a destination folder for each file type.
-3. Click **Organise files**.
+3. Click **Preview and organise...**, review the planned moves, then confirm.
 
 If a destination is left blank, the application creates a category folder inside the source folder. For example, PDF files go into `PDF Documents`.
 
@@ -57,7 +58,18 @@ The application moves only top-level files in the source folder; it does not pro
 
 The destination folder for a category cannot be the source folder.
 
-## Supported file types
+After a run, **Undo last run** restores moved files to their original locations without overwriting files created since the run. Undo history is available only until the application is closed. **Open destination** opens the destination folder of the last moved file.
+
+Use **Edit file types...** to add, remove, or change categories. Enter one category per line using this format:
+
+```text
+PDF Documents: .pdf
+Spreadsheets: .xlsx, .xls, .csv
+```
+
+Extensions are case-insensitive and each extension can belong to only one category. Settings are saved in the current user's application data folder.
+
+## Built-in file types
 
 | Category | Extensions |
 |---|---|
